@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Decisions and improvements
 
-## Getting Started
+Improved UI/UX Differences over expected one.
 
-First, run the development server:
+-  Enhanced card spacing and visual separation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   -  Cards use more padding, clearer whitespace, less clutter.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-  Higher contrast on key metric cards.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   -  Savings card uses bold, colored icon for quick scanning.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-  Sidebar less dominant, more focus on main content.
+   -  Cleaner layout, user attention directed to analytics.
 
-## Learn More
+## UI/UX Improvements Over Original Design
 
-To learn more about Next.js, take a look at the following resources:
+The implemented UI offers several improvements compared to the PDF design:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Differences & Benefits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Area         | PDF Design           | Current Implementation (Better)   |
+| ------------ | -------------------- | --------------------------------- |
+| Card Spacing | Tighter, low padding | More whitespace, less clutter     |
+| Metric Cards | Flat, low contrast   | Bold icons, high-contrast numbers |
+| Search Bar   | Left, less visible   | Top-right, prominent, accessible  |
+| Chart Colors | Busy, inconsistent   | Accessible, consistent blue tones |
+| Sidebar      | Wide, dominant       | Minimal, content-focused          |
 
-## Deploy on Vercel
+### UX Benefits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-  **Faster key metric recognition**
+   -  Users spot important data quickly with bold icons/colors.
+-  **Reduced cognitive load**
+   -  Clean spacing and minimal sidebar reduce distractions.
+-  **Improved navigation/search**
+   -  Search bar is easier to find and use.
+-  **Modern, accessible look**
+   -  Consistent color palette and whitespace match SaaS best practices.
